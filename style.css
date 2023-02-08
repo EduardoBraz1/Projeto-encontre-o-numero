@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --font-family: 'Nunito', sans-serif;;
+    --bg-color: #D93732;
+    --primary-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+
+.btn-recarregar {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+    font-weight: 700;
+    font-family: var(--font-family);
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.btn-recarregar:hover{
+    background-color: #cec8c8; 
+}
+
+.btn-recarregar:active{
+    background-color: #bcb8b8;
+    border: 1px solid var(--primary-color);
+}
+
+.regra {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 660px) {
+    h1, h2 {
+        font-size: 3rem;
+    }
+
+
+    h3 {
+        font-size: 2rem;
+    }
+}
